@@ -3,7 +3,6 @@
 Including the required libraries and the dataset.
 ```
 library(seqinr)
-library(MCMCpack)
 library(ggplot2)
 
 #Reading downloaded data and loading it in Data variable
