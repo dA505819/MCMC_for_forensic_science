@@ -43,5 +43,4 @@ ggplot(combi) + geom_line(aes(Time, integer_values)) + facet_grid(factor(number_
    ylab("RFU/1000") +
    ggtitle("Data ; 1 ; 5-FAM")
 ```
-Plot Obtained.
 ![plot](https://github.com/dA505819/MCMC_for_forensic_science/blob/master/images/medium_test.png)
