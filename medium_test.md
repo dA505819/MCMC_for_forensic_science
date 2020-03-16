@@ -37,8 +37,8 @@ combi = rbind(df_1, df_2, df_3)
 ```
 Plotting the dataframe combi.
 ```
-ggplot(combi) + geom_line(aes(Time, integer_values)) + facet_grid(factor(number_of_data) ~ ., scales = "free", space = "free", 
-   shrink = TRUE, as.table = TRUE, switch = "x", margins = TRUE) + 
+ggplot(combi) + geom_line(aes(Time, integer_values)) + facet_grid(factor(number_of_data) ~ ., scales = "free", 
+   space = "free", shrink = TRUE, as.table = TRUE, switch = "x", margins = TRUE) + 
    xlab("Time/1000") + 
    ylab("RFU/1000") +
    ggtitle("Data ; 1 ; 5-FAM")
