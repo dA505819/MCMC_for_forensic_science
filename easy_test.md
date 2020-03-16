@@ -12,5 +12,5 @@ Obtaining the plot.
 ```
 plotabif(Data)
 ```
-**Plot obtained with Data**
+
 ![plot_easy](https://github.com/dA505819/MCMC_for_forensic_science/blob/master/images/easytest.png)
