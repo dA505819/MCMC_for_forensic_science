@@ -133,13 +133,13 @@ Visualizing using traceplot which comes in coda package loaded in MCMCpack.
 ```
 traceplot(linear_reg_bayesian[,"Time"], main = "Time Traceplot")
 ```
-![traceplot]()
+![traceplot](https://github.com/dA505819/MCMC_for_forensic_science/blob/master/images/traceplot.png)
 
 Visualizing using denseplot which comes in coda package loaded in MCMCpack
 ```
 densplot(linear_reg_bayesian[,"Time"], main = "Time Densplot")
 ```
-![denseplot]()
+![denseplot](https://github.com/dA505819/MCMC_for_forensic_science/blob/master/images/densplot.png)
 
 
 
