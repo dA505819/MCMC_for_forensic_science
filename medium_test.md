@@ -1,6 +1,6 @@
 # Medium Test
 
-Including the required libraries and the dataset.
+Including the required libraries and the data.
 ```
 library(seqinr)
 library(ggplot2)
