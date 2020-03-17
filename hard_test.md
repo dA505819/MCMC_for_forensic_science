@@ -1,6 +1,6 @@
 # Hard Test
 
-We need to demonstrate our capability in one of the "Bayesian packages for general model fitting". I choose MCMCpack package which is commonly used in social and behavioral sciences.
+We need to demonstrate our capability in one of the "Bayesian packages for general model fitting". I choose **MCMCpack** package which is commonly used in social and behavioral sciences.
 
 Including all the libraries and the data.
 ```
@@ -49,7 +49,7 @@ summary(combi)
  3rd Qu.:   5.00   3rd Qu.: 9342                     
  Max.   :8614.00   Max.   :12457     
  ```
- Missing value treatment before building a linear regression model of Bayesian inference to check the number of NA values in data.
+ Missing value treatment before building a linear regression model of Bayesian inference to check the number of NA values in the data.
  ```
 sapply(combi, function(df)
 {
@@ -59,6 +59,8 @@ sapply(combi, function(df)
  Time integer_values number_of_data 
              0              0              0 
 ```
+Hence we see that data is completely filled and there are no NA values.
+
 Label encoding is done to convert character data in number_of_data column into numerical data.
 ```
 combi = data.table(combi)
@@ -129,6 +131,8 @@ apply(linear_reg_bayesian, MARGIN = 2, quantile, probs = c(0.75, 0.85))
 75%    10.65914 0.9851327       10.66523 51616171
 85%    10.77125 1.0065212       10.77664 51754817
 ```
+Hence we see there are only two values with 75% and 85% probability.
+
 Visualizing using traceplot which comes in coda package loaded in MCMCpack.
 ```
 traceplot(linear_reg_bayesian[,"Time"], main = "Time Traceplot")
